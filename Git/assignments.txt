@@ -1,0 +1,3 @@
+Admin@DigitalStorm-PC MINGW64 ~/Desktop/DojoAssignments
+$ ls -r
+WebFundamentals/  Python/  netCore/

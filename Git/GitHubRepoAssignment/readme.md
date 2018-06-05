@@ -1,0 +1,1 @@
+This is part of the Coding Dojo Web Fundamentals cours demonstrating knowledge of Git

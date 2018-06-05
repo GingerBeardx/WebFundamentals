@@ -1,0 +1,8 @@
+1) created the repo on git hub using the GUI
+2) created the folder structure on my desktop
+3) used touch to create the files in the folder
+4) committed and pushed them as the initial committed
+5) Added some basic HTML and applied style with CSS
+6) Added, commited, and pushed the info to github
+7) Added a new h2 tag and a a happy dance gif
+8) commited my work and pushed it to git hub.

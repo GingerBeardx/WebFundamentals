@@ -1,0 +1,11 @@
+*navigated to Web Fundamentals/Git folder*
+
+mkdir GitHubRepoAssignment
+cd GitHubRepoAssignment
+touch readme.md
+notepad readme.md
+git status
+git add .
+git commit -m "updated readme.me"
+git remote add origin https://github.com/GingerBeardx/GitHubRepoAssignment.git
+git push -u origin master

@@ -1,0 +1,19 @@
+Commands used for Learning to Commit:
+
+cd ..
+mkdir gittest
+cd gittest
+git init
+touch index.html
+touch style.css
+touch aboutMe.txt
+git add .
+git commit -m "File structure established"
+git add .
+git commit -m "updated aboutMe"
+git add .
+git commit -m "added favorite movie to aboutMe"
+git log
+git revert -n 299933a
+git add .
+git commit -m "added favorite book to aboutMe"
