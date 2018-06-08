@@ -30,5 +30,6 @@
   width: 460px;
   background-color: palevioletred;
   display: inline-block;
+  vertical-align: top;
 }
 
