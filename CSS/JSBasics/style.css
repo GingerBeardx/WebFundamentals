@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: lightblue;
+}
+
+body {
+  color: lightblue;
+}
+
+li {
+  margin-left: 15px;
+}
+
+h2 {
+  padding: 15px 0;
+}
+
+p {
+  padding: 3px;
+}
+
+.container {
+  background-color: navy;
+  height: 725px;
+  width: 1150px;
+  padding: 15px;
+}
+
+.header {
+  height: 60px;
+  width: 1150px;
+  margin: 0 auto;
+  background-color: red;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  padding: 10px 0 0 15px;
+}
+
+.navigation {
+  height: 200px;
+  width: 175px;
+  background-color: teal;
+  display: inline-block;
+  vertical-align: top;
+  margin-right:15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.definitions {
+  height: 550px;
+  width: 882px;
+  background-color: #161E49;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.definitions li {
+  padding: 3px;
+}
+
+.sub li {
+    margin-left: 30px;
+}
+
+.lead {
+  color: cyan;
+  text-decoration: underline;
+}
+
+.example {
+  color: royalblue;
+  font-weight: bold;
+}
+
+.footer {
+  height: 60px;
+  width: 1150px;
+  margin: 0 auto;
+  background-color: grey;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.footer p {
+  padding: 22px 0 0 15px;
+}

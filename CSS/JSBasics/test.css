@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  background-color: palegreen;
+  margin: 0px auto;
+  width: 640px;
+  padding-left: 42px;
+}
+#empty {
+  height: 15px;
+  width: 200px;
+}
