@@ -3,11 +3,19 @@ body {
 }
 
 h1 {
-    display: inline-block;
-    vertical-align: top;
+    
     padding-top: 10px;
     font-weight: bold;
     font-size: 38px;
+}
+
+h1, 
+.side-bar, 
+.location, 
+.hrs-phn, 
+.big3-text {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .blue {
@@ -16,6 +24,10 @@ h1 {
 
 .red {
     color: #d9231c;
+}
+
+.cyan {
+    color: #00c0df;
 }
 
 .internet {
@@ -48,8 +60,8 @@ h2 {
 .side-bar {
     width: 200px;
     font-weight: bold;
-    
     padding-top: 20px;
+    margin-right: 20px;
 }
 
 .side-bar p {
@@ -89,8 +101,8 @@ h2 {
 }
 
 .advert p {
-    font-size: 20px;
     color: #fff;
+    font-size: 20px;
     line-height: 1.2em;
 }
 
@@ -101,4 +113,98 @@ h2 {
 .cyan-btn {
     background: linear-gradient(to bottom, #73d0df, #00c1df);
     margin-bottom: 20px;
+}
+
+.content {
+    display: inline-block;
+}
+
+.location {
+    margin-top: 15px;
+}
+
+.location img {
+    width: 20px;
+}
+
+.location h4 {
+    display: inline;
+    vertical-align: bottom;
+    padding-top: 6px;
+    font-size: 20px;
+}
+
+.contact {
+    margin-top: 15px;
+    display: inline-block;
+    width: 290px;
+    position: relative;
+    left: 420px;
+}
+
+.contact img {
+    width: 55px;
+}
+
+.hrs-phn {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.hrs-phn p {
+    font-size: 11px;
+}
+
+#phone {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.words {
+    width: 715px;
+}
+
+.words h3, .big3 h3 {
+    font-weight: 900;
+    padding: 8px 0;
+}
+
+.words p, .big3 p {
+    padding: 8px 0;
+}
+
+.words ul, .words ol {
+    margin-left: 50px;
+    line-height: 1.3em;
+}
+
+.words ul {
+    list-style-type: circle;
+    
+}
+
+.words img {
+    width: 200px;
+    margin: 15px 0 15px 225px;;
+}
+
+
+.words ol {
+    list-style-type: decimal;
+}
+
+.big3 {
+    border: 5px solid #22659e;
+    width: 700px;
+    margin-top: 15px;
+}
+
+.big3 img {
+    width: 150px;
+    margin: 15px;
+}
+
+.big3-text {
+    width: 500px;
+    margin-top: 15px;
 }
