@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.blue {
+    color: #22659e;
+}
+
+.red {
+    color: #d9231c;
+}
+
+.internet {
+    position: relative;
+    top: 20px;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.globe {
+    width: 100px;
+}
+
+h2 {
+    height: 40px;
+    width: 940px;
+    background: linear-gradient(to bottom, #23669e, #5283ad, #23669e);
+    color: #fff;
+    font-size: 26px;
+    padding: 15px 0 0 20px;
+}
+
+.main {
+    background: linear-gradient(to bottom, #e3e3e3, #fff);
+}
+
+.side-bar {
+    width: 200px;
+    font-weight: bold;
+    
+    padding-top: 20px;
+}
+
+.side-bar p {
+    padding: 15px 0 15px 4px;
+    font-size: 13px;
+}
+
+.blue-btn, .orange-btn, .cyan-btn {
+    height: 40px;
+    width: 175px;
+    margin-top: 5px;
+    margin-left: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.blue-btn {
+    background: linear-gradient(to bottom, #6298c3, #2668a0)
+}
+
+.orange-btn {
+    background: linear-gradient(to bottom, #ebab52, #f07300)
+}
+
+.side-bar hr {
+    margin: 15px 0 15px 10px;;
+    width: 180px;
+}
+
+.advert {
+    background-image: url('matrix.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: #000 2px 2px 3px;    
+}
+
+.advert p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+.advert img {
+    width: 85px;
+}
+
+.cyan-btn {
+    background: linear-gradient(to bottom, #73d0df, #00c1df);
+    margin-bottom: 20px;
+}
