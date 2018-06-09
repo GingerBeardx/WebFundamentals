@@ -1,0 +1,12 @@
+div {
+    height: 400px;
+    width: 400px;
+    background: #eee;
+    margin: 0 auto;
+}
+
+p {
+    width: 60%;
+    margin: auto;
+    font: 14px/1.5 Helvetica, sans-serif;
+}

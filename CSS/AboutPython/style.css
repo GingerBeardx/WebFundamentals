@@ -1,0 +1,56 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+
+input, button {
+    height: 25px;
+}
+
+button {
+    background-color: #245076;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main {
+    height:900px;
+    width: 960px;
+    background-color: #245076;
+    padding: 10px 30px;
+}
+
+.logo img {
+    height: 100px;
+    width: 400px;    
+}
+
+.logo {
+    display: inline-block;
+}
+
+.search {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid red;
+    text-align: center;
+    position: relative;
+    left: 265px;
+}
+
+.search a {
+    color: #d5b300;
+    text-decoration: underline;
+    padding: 0 10px;
+    vertical-align: center;
+}
+
+.normal {
+    border-right: 2px solid #000;
+}
+
+.search-box {
+    background-color: #444;
+    padding: 20px 35px;
+}
