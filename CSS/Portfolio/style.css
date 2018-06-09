@@ -1,35 +1,137 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2, p, a {
+  padding: 8px;
+  line-height: 1.05em
+}
+
+a {
+  text-decoration: underline;
+}
+
+button {
+  display: block;
+  background-color: #407d61;
+  color: #fff;
+  border-radius: 5px;
+  margin: 12px 0 0 100px;
+}
+
+.title {
+  background-color: #f5f5f5;
+  width: 985px;
+  height: 65px;  
+}
+
+.name {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.slogan span {
+  font-size: 16px;
+}
+
+.slogan {
+  display: inline-block;
+  position: relative;
+  left: 540px;;
+}
+
 .container {
-  height: 1000px;
-  width: 1200px;
-  background-color: rgb(45, 8, 63);
-  margin: 0 auto;
+  height: 1005px;
+  width: 955px;
+  background-color: #311f25;
   padding: 15px;
+  
 }
 
 .main-image {
   height: 300px;
   width: 460px;
-  border: 5px solid plum;
+  border: 5px solid #8c8a97;
   background-image: url('photo_of_me.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .head {
-  background-color: chartreuse;
+  background-color: #8c8a97;
   height: 40px;
   width: 460px;
   display: inline-block;
   position: static;
+  color: #fff;
+  font-size: 22px;
+  
 }
 
 .about {
   height: 310px;
   width: 460px;
-  background-color: palevioletred;
+  background-color: #dacbd9;
   display: inline-block;
   vertical-align: top;
+  overflow: hidden;
 }
 
+.project {
+  height: 675px;
+  width: 300px;
+  background-color: #dacbd9;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 300px;
+  height: 175px;
+  position: relative;
+}
+
+.tech {
+  position: absolute;
+  top: 830px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.tech-icons {
+  position: absolute;
+  top: 875px;
+  width: 300px;
+  margin-left: 7px;
+}
+
+.tech-icons img {
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+.foot {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.social {
+  display: block;
+
+}
+
+.foot span {
+  margin-top: 25px;
+}
+
+.social img {
+  height: 15px;
+  width: 15px;
+  margin-right: 3px;
+  margin-top: 6px;
+}
