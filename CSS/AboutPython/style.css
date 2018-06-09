@@ -5,20 +5,25 @@ body {
 
 input, button {
     height: 25px;
+    border-radius: 5px;
 }
 
 button {
     background-color: #245076;
     color: #fff;
-    border-radius: 5px;
     padding: 5px;
 }
 
-.main {
-    height:900px;
+.main, .footer {
+    /* height:900px; */
     width: 960px;
     background-color: #245076;
     padding: 10px 30px;
+    border-bottom: 5px solid #183753;
+}
+
+.main a {
+    color: #fff;
 }
 
 .logo img {
@@ -33,7 +38,6 @@ button {
 .search {
     display: inline-block;
     vertical-align: top;
-    border: 1px solid red;
     text-align: center;
     position: relative;
     left: 265px;
@@ -53,4 +57,103 @@ button {
 .search-box {
     background-color: #444;
     padding: 20px 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation-top {
+    background-color: #3d7aad;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation-top a, .footer a {
+    font-size: 22px;
+    padding: 0 30px;
+}
+
+.nav-side {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: underline;
+    width: 270px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.nav-side ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 1.65em;
+}
+
+.about {
+    display: inline-block;
+    width: 650px;
+    text-align: center;
+}
+
+.about p {
+    padding: 8px 0;
+}
+
+.poem {
+    color: #d5b300;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.features p, ul, h3 {
+    color: #000;
+    padding: 4px 0;
+}
+
+.features {
+    width: 1000px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.custom {
+    color: #73a7d5;
+}
+
+.features h3 {
+    font-weight: bold;
+}
+
+.features ul {
+    color: #73a7d5;
+    list-style-type: square;
+    list-style-position: outside;
+    line-height: 1.25em;
+    padding-left: 60px;
+}
+
+.get-started, .applications {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    border-top: 5px solid #73a7d5;    
+}
+
+.footer {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.footer a, .footer p {
+    color: #87b9e5;
+}
+
+.footer a {
+    padding: 30px 20px;
+}
+
+.footer p {
+    margin-top: 30px;
 }
