@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/CSS\\Algorithm\\algorithm3.js"
+            "program": "${workspaceFolder}/CSS\\Algorithm\\algorithm4.js"
         }
     ]
 }

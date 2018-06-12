@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-height: 150px;
+    background-color: green;
+    margin: 15px;
+}
+.nav {
+    min-height: 300px;
+    background-color: blue;
+    margin: 0 15px;
+    width: 25%;
+}
+.main {
+    min-height: 400px;
+    background-color: red;
+    margin: 0 15px;
+    padding: 5px 0;
+    width: 75%;
+}
+.cap {
+    min-height: 200px;
+    background: yellow;
+    margin: 15px;
+    width: 33%
+}
+.sub {
+    min-height: 120px;
+    background-color: purple;
+    margin: 15px;
+}
+.flex {
+    display: flex;
+}
+@media only screen and (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+    .main {
+        width: 100%
+    }
+}
