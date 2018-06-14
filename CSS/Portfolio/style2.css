@@ -5,14 +5,14 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
-    /* background-color: #211318; */
+    background-color: #211318;
 }
 div, .header * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .container {
     max-width: 930px;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
 }
 .header {
     background-color: whitesmoke;
@@ -66,26 +66,28 @@ div, .header * {
     padding-bottom: 4px;
 }
 .text * {
-    text-align: left;
     margin: 10px;
 }
 .port-item {
     margin: 0 4px;
 }
-.port-card {
+.port-card, .text {
     text-align: left;
 }
 .port-card p {
     margin: 15px;
+    min-height: 250px;
 }
 .port-card img {
     width: 100%;
 }
 .lg-2 {
-    width: 31%;
+    height: 100%;
+    max-width: 30%;
 }
 .tech-icons {
     padding-top: 15px;
+    vertical-align: bottom;
 }
 .tech-icons img {
     max-width: 45px;
@@ -101,4 +103,21 @@ div, .header * {
     border-radius: 10px;
     color: white;
     width: 60%;
+}
+.header div {
+    padding: 6px 0;
+}
+.e-mail p {
+    padding-right: 5px;
+    border-right: 1px solid black;
+}
+.footer {
+    padding-bottom: 15px;
+}
+.social a {
+    color: black;
+}
+.social img {
+    max-width: 15px;
+    vertical-align: bottom;
 }
