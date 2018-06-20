@@ -40,3 +40,27 @@ function drawRightStars(num) {
     return string;
 }
 console.log(drawRightStars(25));
+
+function drawCenterStars(num) {
+    var string = "";
+    // for loop up to 75 characters
+    // determine the range to print *
+    // if i is within the star range, print stars
+    // otherwise print spaces.
+
+    //test case if stars = 10
+    // first 75 - 10 = 65
+    // 65 / 2 = 32
+    // prtnt 32 spaces => 10 stars => 33 spaces = 75 character string
+
+    for (var i = 0; i < 75; i++) {
+        if (i > (75 - num) / 2 && i < ((75 - num) / 2) + num) {
+            string += "*";
+        } else {
+            string += " ";
+        }
+    }
+    console.log(string.length);
+    return string;
+}
+console.log(drawCenterStars(25));
