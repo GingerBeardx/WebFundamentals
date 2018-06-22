@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Functions</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu" rel="stylesheet">
+    <script src="JQuery_3.3.1.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        div {
+            border-bottom: 2px solid seagreen;
+        }
+        h4 {
+            text-shadow: 2px 0px 12px aquamarine;
+        }
+        .header {
+            text-align: center;
+            background-color: #222;
+            color:lightskyblue;
+            padding: 10px;
+        }
+        .container {
+            background-color: lightgray;
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        span {
+            color: forestgreen;
+            font-weight: bold;
+        }
+        img {
+            width: 300px;
+        }
+        .hide-show, 
+        #flower-img, 
+        #slider, 
+        .fader {
+            display: none;
+        }
+        .classed-up {
+            margin: 15px 50px;
+            background-color: black;
+            color: #4783dd;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <h1>jQuery 3.3.1 Functions Sandbox</h1>
+            <p>This page is where I learned how to use the fundamental jQuery functions</p>
+        </div>
+        <div class="container">
+            <div class="clicker">
+                <h4>The whole point of jQuery is to make the page interactive!</h4>
+                <p>Will you please <span>click me</span> so I can feel like I'm not just sitting here for no reason?</p>
+            </div>
+            <div>
+                <h4>The following paragraph is neither <span id="show">shown</span> nor <span id="hide">hidden</span>.</h4>
+                <p class="hide-show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore doloribus laborum saepe amet suscipit debitis assumenda vel cumque! Nam sint odio harum dignissimos culpa!</p>
+            </div>
+            <div>
+                <h4>Rather than using show and hide, a simple <span>toggle</span> can do the trick.</h4>
+                <p><span id="toggle-click">Click Me</span> to show or hide the image below</p>
+                <img id="flower-img" src="flower.JPG" alt="A pretty flower">
+            </div>
+            <div>
+                <h4><span>Slides</span> are a lot of fun and can come from different directions!</h4>
+                <p>Slides can <span class="down">slide down</span>, <span class="up">slide up</span>, or <span class="toggle">toggle</span>.</p>
+                <img id="slider" src="bryce.JPG" alt="Bryce Canyon">
+            </div>
+            <div>
+                <h4>For a different approach, try a little <span>fade</span> action</h4>
+                <p>Sometimes you want to <span class="fade-in">fade in</span>, other times you want to <span class="fade-out">fade out</span>.</p>
+                <p class="fader">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis pariatur minima laudantium. Nemo error, voluptates consequatur provident, dicta officiis soluta a tenetur culpa quidem maiores, saepe dolores expedita animi id!</p>
+            </div>
+            <div>
+                <h4>At times, you might feel like your page needs a little more <span>class</span>.</h4>
+                <p>The following parragraph is really boring to look at. <span class="classy">Click here</span> to at least make it better to look at.</p>
+                <p class="boring">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum tenetur impedit recusandae beatae, non ad quia commodi tempora debitis, doloribus consequatur? Nisi quis laboriosam accusantium reprehenderit dolorem! Rerum maxime ipsam fuga animi eligendi veritatis ipsa excepturi voluptatem? Molestiae libero numquam possimus voluptate voluptatem hic iste harum repellat magni provident.</p>
+            </div>
+            <div>
+                <h4>Use some jQuery to add the important info <span class="before-par">before</span> and <span class="after-par">after</span> this riveting paragraph.</h4>
+                <p class="middle-par">This is the <span>middle</span> paragraph. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem omnis repudiandae id deleniti eos. Earum velit doloremque dicta recusandae, numquam pariatur quasi impedit et quos alias at aut culpa! Totam.</p>
+            </div>
+            <div>
+                <h4>Sometiems you might need to <span>append</span> some data to the page.</h4>
+                <p>So all you have to do is <span class="inc-click">click here</span> to complete the following:</p>
+                <p class="incomplete">The rain in spain stays mainly in the plain. </p>
+            </div>
+            <div>
+                <h4>So let's tweak the <span>HTML</span> of this lorem paragraph into something meaningful.</h4>
+                <p>All you have to do is <span class="reveal">Click here</span> to translate the next paragraph</p>
+                <p class="translate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at harum ipsum illum repellat sequi modi sint esse aliquid odit asperiores quos adipisci velit sed, dignissimos quidem, perferendis nemo numquam vel ratione? Autem, amet eaque earum atque ratione, aliquid adipisci soluta aut omnis illo ab exercitationem dicta repudiandae quod ullam accusamus.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.reveal').click(function() {
+            $('.translate').html( "<p>Some birds aren't meant to be caged. Their feathers are just too bright. And when they fly away, the part of you that knows it was a sin to lock them up DOES rejoice. But still, the place you live in is that much more drab and empty that they're gone.</p>")
+        });
+        $('.clicker').click(function() {
+            alert("Thank you! I now feel like my existence has meaning.");
+        });
+        $('#hide').click(function() {
+            $('.hide-show').hide("slow",function() {
+                // hides the paragraph
+            });
+        });
+        $('#show').click(function() {
+            $('.hide-show').show("slow",function() {
+                // reveals the paragraph
+            });
+        });
+        $('#toggle-click').click(function() {
+            $('#flower-img').toggle("slow", function() {
+                // toggles the image
+            });
+        });
+        $('.down').click(function() {
+            $('#slider').slideDown("slow", function() {
+                // Slides it down
+            });
+        });
+        $('.up').click(function() {
+            $('#slider').slideUp("slow", function() {
+                // Slides it up
+            });
+        });
+        $('.toggle').click(function() {
+            $('#slider').slideToggle("slow", function() {
+                // Slides as a toggle
+            });
+        });
+        $('.fade-in').click(function() {
+            $('.fader').fadeIn("slow", function() {
+                // fades the paragraph in
+            });
+        });
+        $('.fade-out').click(function() {
+            $('.fader').fadeOut("slow", function() {
+                // fades the paragraph out
+            });
+        });
+        $('.classy').click(function() {
+            $('.boring').addClass('classed-up');
+        });
+        $('.before-par').click(function() {
+            $('.middle-par').before("<p>This is the <span>first</span> paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, enim laboriosam. Unde debitis commodi iusto.</p>");
+        });
+        $('.after-par').click(function() {
+            $('.middle-par').after("<p>This is the <span>last</span> paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi nemo quis sequi sed nesciunt corporis, voluptates odio aliquid voluptate.</p>");
+        });
+        $('.inc-click').click(function() {
+            $('.incomplete').append( "<span>But in Hartford, Heriford, and Hampshire, hurricanes hardly ever happen.</span>")
+        });
+    </script>
+</body>
+</html>

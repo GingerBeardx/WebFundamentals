@@ -21,7 +21,7 @@ function drawLeftStars(num) {
     }
     return string;
 }
-console.log(drawLeftStars(25));
+/* console.log(drawLeftStars(25)); */
 
 function drawRightStars(num) {
     // declare a string value that will be printed
@@ -39,7 +39,7 @@ function drawRightStars(num) {
     }
     return string;
 }
-console.log(drawRightStars(25));
+/* console.log(drawRightStars(25)); */
 
 function drawCenterStars(num) {
     var string = "";
@@ -63,4 +63,60 @@ function drawCenterStars(num) {
     console.log(string.length);
     return string;
 }
-console.log(drawCenterStars(25));
+/* console.log(drawCenterStars(25)); */
+
+// Threes and Fives - Create threesFives() that adds values from 100 and 4000000 (inclusive) if that value is evenly divisible by 3 or 5 but not both. Display the final sum in the console.
+function threesAndFives() {
+    // loop that starts at 100 and goes to 4000000
+    // if i is divisible by 3 AND 5 do not add
+    // if i is divisible by 3 add to sum
+    // if i is divisible by 5 add to sum
+
+    var sum = 0;
+    // test case 1 to 30
+    for(i = 100; i < 4000000; i++) {
+        if(i % 5 == 0 && i % 3 == 0) {
+            continue;
+        } else if (i % 5 == 0 || i % 3 == 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+/* console.log(threesAndFives()); */
+
+// Change is inevitable (especially when breaking a twenty). Make generateCoinChange(cents). Accept a number of American cents, compute and print how to represent that amount with smallest number of coins. Common American coins are pennies (1 cent), nickels (5 cents), dimes (10 cents), and quarters (25 cents).
+function generateCoinChange(cents) {
+    // evaluate if the cents / 25 has a remainder
+    // if there is a remainder increment quarter count by 1 and reduce cents by 25
+    // if the remainder is less than 25, evaluate if cents / 10 has a remainder
+    // if there is a remainder, increment dimes count by 1 and reduce cents by 10
+    //if the remainder is less than 10, evaluate if cents / 5 has a remainder
+    // if there is a remainder, increment nickles count by 1 and reduce cents by 5
+    // any remaining cenets should be pennies, so pennies = remainder.
+
+    var quarters = 0,
+        dimes = 0,
+        nickles = 0,
+        pennies = 0;
+
+    while (cents > 0) {
+        if (cents > 25) {
+            quarters++;
+            cents -= 25;
+        } else if (cents > 10) {
+            dimes++;
+            cents -= 10;
+        } else if (cents > 5) {
+            nickles++;
+            cents -= 5;
+        } else {
+            pennies = cents;
+            cents -= cents;
+        }
+    }
+    console.log("Pennies: " + pennies + " Nickles: " + nickles + " Dimes: " + dimes + " Quarters: " + quarters);
+}
+/* generateCoinChange(4852); */
+
+
