@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's that Pokemon?</title>
+    <script src="JQuery_3.3.1.js"></script>
+
+    <style type="text/css">
+        body {
+            max-width: 1020px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .poke-imgs {
+            width: 70%;
+        }
+
+        .ident {
+            box-shadow: 1px 1px 15px black;
+            width: 25%;
+            position: fixed;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        .ident * {
+            margin: 3px 10px;
+            padding: 0px 10px;
+        }
+
+        .info {
+            text-align: left;
+            width: 95%;
+        }
+
+        .name {
+            text-transform: capitalize;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            for (var i = 1; i < 151; i++) {
+                $('.poke-imgs').append(`<img id ="${i}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${i}.png">`)
+            }
+
+            $('.poke-imgs').on('click', 'img', function () {
+                let pokeIdent = $(this).attr("id");
+                let imgSrc = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/" + pokeIdent + ".png";
+
+                $('.poke-pic').attr("src", imgSrc);
+
+                $.get(`https://pokeapi.co/api/v2/pokemon/${pokeIdent}/`, function (resp) {
+                    $('.name').html(resp.name);
+
+                    let liString = "<ul>";
+                    for (let i = 0; i < resp.types.length; i++) {
+                        liString += "<li>" + resp.types[i].type.name + "</li>";
+                    }
+                    liString += "</ul>"
+                    $('.types').html(liString);
+
+                    $('.height').html(resp.height);
+                    $('.weight').html(resp.weight);
+                }, "json");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="poke-imgs">
+
+    </div>
+    <div class="ident">
+        <h2>What's that Pokemon?</h2>
+        <p>Click One of the pokemon on the left to get key info:</p>
+        <img src="" class="poke-pic">
+        <h3 class="name"></h3>
+        <div class="info">
+            <h4>Types:</h4>
+            <p class="types"></p>
+            <h4>Height:</h4>
+            <p class="height"></p>
+            <h4>Weight:</h4>
+            <p class="weight"></p>
+        </div>
+
+    </div>
+</body>
+
+</html>

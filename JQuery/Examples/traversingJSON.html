@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traversing JSON</title>
+    <script src="JQuery_3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.get("https://pokeapi.co/api/v2/pokemon/1/", function (resp) {
+                let html_str = "";
+                html_str += "<h4>Types</h4>";
+                html_str += "<ul>"
+                for (let i = 0; i < resp.types.length; i++) {
+                    html_str += "<li>" + resp.types[i].type.name + "</li>";
+                }
+                html_str += "</ul>"
+                $("#bulbasaur").html(html_str);
+            }, "json");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="bulbasaur"></div>
+
+</body>
+
+</html>
