@@ -61,6 +61,7 @@
 
                 $('.poke-pic').attr("src", imgSrc);
 
+                /* API Call to get Pokemon data */
                 $.get(`https://pokeapi.co/api/v2/pokemon/${pokeIdent}/`, function (resp) {
                     $('.name').html(resp.name);
 
@@ -69,12 +70,12 @@
                         liString += "<li>" + resp.types[i].type.name + "</li>";
                     }
                     liString += "</ul>"
-                    $('.types').html(liString);
 
+                    $('.types').html(liString);
                     $('.height').html(resp.height);
                     $('.weight').html(resp.weight);
                 }, "json");
-            })
+            });
         });
     </script>
 </head>
